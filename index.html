@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>앱토리</title>
+<meta name="description" content="AI로 만든 앱을 설치 없이 바로 써보는 곳. 이번 주 가장 많이 써본 앱 순위도 볼 수 있어요.">
+<meta property="og:title" content="앱토리">
+<meta property="og:description" content="AI로 만든 앱을 설치 없이 바로 써보는 곳">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E1424">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p class="notice" id="sample-notice" hidden>지금은 예시 앱으로 보여주는 중이에요 · 앱, 만든 사람, 숫자는 모두 예시예요</p>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="앱토리 홈">앱토리<sup>?</sup></a>
+    <label class="search"><span class="sr">앱 검색</span><input id="q" type="search" placeholder="앱 이름이나 하고 싶은 일로 찾기" autocomplete="off"></label>
+    <a class="up-btn" id="upload-top" href="#" data-upload>내 앱 올리기</a>
+  </div>
+</header>
+
+<main class="wrap" id="view" aria-live="polite"></main>
+
+<footer>
+  <div class="wrap">
+    <details id="rules">
+      <summary>순위 기준</summary>
+      <ul>
+        <li>이번 주(월요일 0시~일요일 24시, 한국 시간)에 써보기·다운받기 버튼을 누른 사람 수로 정해요.</li>
+        <li>한 사람은 앱마다 하루 한 번만 세요. 로그인이 없어서 같은 기기·브라우저를 같은 사람으로 봐요.</li>
+        <li>공유 링크로 들어와 써본 사람도 똑같이 세요.</li>
+        <li>짧은 시간에 몰린 이상한 클릭은 운영자가 확인한 뒤 빼요. 반복되면 진열을 멈춰요.</li>
+        <li>숫자는 5분마다 새로 계산해요. 진열된 앱이 20개를 넘으면 순위를 공개해요.</li>
+      </ul>
+    </details>
+    <details>
+      <summary>개인정보 안내</summary>
+      <p>앱토리는 이름, 이메일 같은 개인정보를 모으지 않아요. 같은 사람을 하루에 한 번만 세려고, 이 기기의 브라우저에 무작위 번호 하나를 저장해요. 써보기 버튼을 누르면 다른 사람이 만든 사이트로 이동하니, 그곳의 개인정보 안내도 확인해 주세요.</p>
+    </details>
+    <div class="links"><span>© 2026 앱토리</span><span id="contact"></span></div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="config.js"></script>
+<script src="sample-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
