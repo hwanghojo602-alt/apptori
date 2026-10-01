@@ -1,7 +1,7 @@
 // 앱토리 설정. 비밀번호나 키는 절대 여기에 넣지 마세요(이 파일은 누구나 볼 수 있어요).
 window.APPTORI_CONFIG = {
   // 구글 Apps Script 웹앱 주소(…/exec 로 끝남). 비워두면 예시 앱으로 보여줘요.
-  API_URL: "",
+  API_URL: "https://script.google.com/macros/s/AKfycbxXXB8Eco9VnTBoDZ2DBFlIBqwbOm2MFLOfbpp-JTiFVgADXXoVfcbx7L35zkgXKKzVww/exec",
   // '내 앱 올리기' 구글 폼 주소. 비워두면 "준비 중" 안내가 떠요.
   SUBMIT_FORM_URL: "",
   // 화면 맨 아래에 보일 문의 주소(선택)
